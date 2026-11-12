@@ -394,6 +394,8 @@ for r in revs:
     escribir(f"reviews/{r['slug']}/index.html", pagina_review(r))
 escribir("feed.xml", feed())
 escribir("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
+escribir("CNAME", BASE.split("//")[-1] + "\n")   # dominio propio para GitHub Pages
+escribir(".nojekyll", "")                        # publicar los archivos tal cual, sin Jekyll
 hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 urls = [(BASE + "/", hoy, "1.0"), (f"{BASE}/reviews/", hoy, "0.9")] + [(r["url"], r["fecha"], "0.8") for r in revs]
 escribir("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
