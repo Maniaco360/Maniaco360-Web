@@ -138,13 +138,16 @@ def playlist(bloque):
 <p class="embed-note">Al abrirlo, se carga contenido de YouTube. Si no se reproduce, utiliza el enlace a la lista.</p>
 <div class="playlist-player"></div></details></div>"""
 
+PEQUENAS = set()          # imagenes con version reducida disponible
+
 def img_tag(rev, clase, lazy=True):
     n = rev["imagen"]
     chico = n.replace(".webp", "-800.webp")
     alt = e(rev.get("imagen_alt") or rev["juego"])
     carga = ' loading="lazy"' if lazy else ""
-    return (f'<img src="/images/{n}" srcset="/images/{chico} 800w, /images/{n} 1600w" '
-            f'sizes="(max-width: 700px) 100vw, 700px" alt="{alt}" '
+    srcset = (f' srcset="/images/{chico} 800w, /images/{n} 1600w"'
+              f' sizes="(max-width: 700px) 100vw, 700px"') if n in PEQUENAS else ""
+    return (f'<img src="/images/{n}"{srcset} alt="{alt}" '
             f'width="1600" height="900" class="{clase}"{carga}>')
 
 # ---------- cargar reviews ----------
@@ -315,6 +318,26 @@ if OUT.exists():
         shutil.rmtree(OUT)          # limpieza; si el sistema no permite borrar, se escribe encima
     except OSError:
         pass
+def preparar_estaticos():
+    (OUT / "images").mkdir(parents=True, exist_ok=True)
+    shutil.copy(R / "plantilla/estilo.css", OUT / "style.css")
+    shutil.copy(R / "plantilla/playlists.js", OUT / "playlists.js")
+    try:
+        from PIL import Image
+    except ImportError:
+        Image = None
+        print("Aviso: Pillow no esta instalado; se publican las imagenes a tamano completo.")
+    for img in sorted((R / "imagenes").glob("*.webp")):
+        shutil.copy(img, OUT / "images" / img.name)
+        if Image is None:
+            continue
+        im = Image.open(img)
+        if im.width > 800:
+            im.resize((800, round(im.height * 800 / im.width)), Image.LANCZOS).save(
+                OUT / "images" / img.name.replace(".webp", "-800.webp"), quality=82, method=6)
+            PEQUENAS.add(img.name)
+
+preparar_estaticos()
 escribir("index.html", pagina_inicio())
 escribir("reviews/index.html", pagina_indice())
 for r in revs:
@@ -326,19 +349,4 @@ urls = [(BASE + "/", hoy, "1.0"), (f"{BASE}/reviews/", hoy, "0.9")] + [(r["url"]
 escribir("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
          + "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod><priority>{p}</priority></url>" for u, m, p in urls)
          + "</urlset>")
-shutil.copy(R / "plantilla/estilo.css", OUT / "style.css")
-shutil.copy(R / "plantilla/playlists.js", OUT / "playlists.js")
-(OUT / "images").mkdir(exist_ok=True)
-try:
-    from PIL import Image
-    tiene_pil = True
-except ImportError:
-    tiene_pil = False
-for img in sorted((R / "imagenes").glob("*.webp")):
-    shutil.copy(img, OUT / "images" / img.name)
-    if tiene_pil:
-        im = Image.open(img)
-        if im.width > 800:
-            im.resize((800, round(im.height * 800 / im.width)), Image.LANCZOS).save(
-                OUT / "images" / img.name.replace(".webp", "-800.webp"), quality=82, method=6)
 print(f"Generado en {OUT}: {len(revs)} reviews, {sum(1 for _ in OUT.rglob('*') if _.is_file())} archivos")
