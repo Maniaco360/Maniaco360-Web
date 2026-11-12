@@ -1,0 +1,50 @@
+{
+  "base": "https://www.maniaco360.com",
+  "nombre": "Maniaco360",
+  "titulo": "Maniaco360 — Videojuegos con criterio propio",
+  "descripcion": "El espacio de Maniaco360: videojuegos, reviews, opiniones y el camino de aprender a crear un videojuego. Encuéntrame en YouTube, TikTok e Instagram.",
+  "autor": "Alejandro",
+  "email": "Maniaco360@outlook.es",
+  "imagen_social": "hero.webp",
+  "redes": {
+    "youtube": "https://www.youtube.com/@Maniaco360",
+    "tiktok": "https://www.tiktok.com/@maniaco360_",
+    "instagram": "https://www.instagram.com/maniaco360_/"
+  },
+  "portada": {
+    "linea": ["EL PUNTO DE PARTIDA", "PARTIDA NUEVA / 001"],
+    "badge": "BIENVENIDO A MANIACO360",
+    "titulo": "Jugar. Opinar.\nAprender a crear.",
+    "texto": "Mi pasión de siempre, desde todos los ángulos.\nEste es el comienzo.",
+    "boton": "Conoce el proyecto",
+    "nota_arte": "ARTE CONCEPTUAL · ILUSTRACIÓN",
+    "imagen": "hero.webp",
+    "imagen_alt": "Ilustración de fantasía: un explorador frente a una ciudad oscura y un eclipse rojo",
+    "lateral": ["EN ESTE ESPACIO", "01—03"],
+    "temas": [
+      {"n": "01", "eyebrow": "CRITERIO PROPIO", "titulo": "Lo que juego.\nLo que pienso.", "texto": "Reviews e impresiones, con razones para estar de acuerdo. O no.", "href": "#opiniones"},
+      {"n": "02", "eyebrow": "DALE AL PLAY", "titulo": "Fuera del menú.", "texto": "Partidas, descubrimientos y esos momentos que merece la pena compartir.", "href": "#videos"},
+      {"n": "03", "eyebrow": "DESDE CERO", "titulo": "Al otro lado\ndel videojuego.", "texto": "El camino de aprender a crear uno. También con sus errores.", "href": "#desarrollo"}
+    ],
+    "redes_titulo": "LA PARTIDA SIGUE EN"
+  },
+  "secciones": {
+    "opiniones": {"eyebrow": "CON CRITERIO PROPIO", "titulo": "Reviews y opiniones"},
+    "videos": {"eyebrow": "MANDO, CÁMARA, ACCIÓN", "titulo": "En vídeo", "playlist": "PLRWURDlr3Oao", "playlist_titulo": "Veredicto 360 · Reviews de videojuegos"},
+    "desarrollo": {
+      "eyebrow": "DIARIO DE DESARROLLO",
+      "titulo": "De jugar mundos\na intentar\n<em>crear uno.</em>",
+      "texto": "Aún no he empezado. Quiero compartir el aprendizaje desde el primer paso: lo que descubra, lo que falle y lo que consiga hacer funcionar.",
+      "playlist": "PLdBir1vFJhLE",
+      "playlist_titulo": "Creando videojuegos desde cero"
+    },
+    "sobre_mi": {
+      "eyebrow": "DETRÁS DEL NICK",
+      "titulo": "Soy Alejandro.\nAquí, Maniaco360.",
+      "parrafos": [
+        "Los videojuegos son mi principal pasión. Este espacio nace para reunir lo que juego, lo que pienso y lo que vaya aprendiendo al intentar crear mis propios juegos.",
+        "Habrá variedad, porque quiero subir contenido que me apetezca hacer. El hilo conductor serán siempre los videojuegos y mi forma de vivirlos."
+      ]
+    }
+  }
+}
