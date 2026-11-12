@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Genera la web de Maniaco360 a partir de contenido/.  Solo biblioteca estandar."""
-import json, re, shutil, html, os
+import json, re, shutil, html, os, urllib.request, xml.etree.ElementTree as ET
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -127,12 +127,24 @@ def cabecera(activo):
 PIE = f"""<footer class="wrap site-footer"><p>Maniaco360 · {S['autor']} · <a href="mailto:{S['email']}">{S['email']}</a></p>
 <p class="muted">Las imágenes promocionales pertenecen a sus respectivos estudios y editoras.</p></footer>"""
 
+def tarjeta_video(v):
+    f = datetime.strptime(v["fecha"], "%Y-%m-%d")
+    meses = "ene feb mar abr may jun jul ago sep oct nov dic".split()
+    legible = f"{f.day} {meses[f.month - 1]} {f.year}"
+    return (f'<article class="video-card"><a href="{e(v["url"])}" target="_blank" rel="noopener noreferrer">'
+            f'<img src="{e(v["miniatura"])}" alt="" width="480" height="360" loading="lazy">'
+            f'<div class="video-copy"><time datetime="{v["fecha"]}">{legible}</time>'
+            f'<h4>{e(v["titulo"])}</h4><span class="text-link">Ver en YouTube ↗</span></div></a></article>')
+
 def playlist(bloque):
     pid, tit = bloque["playlist"], bloque["playlist_titulo"]
     feed = "reviews" if "Veredicto" in tit else "development"
+    vids = VIDEOS.get(feed, [])[:3]
+    contenido = ("".join(tarjeta_video(v) for v in vids) if vids else
+                 '<p class="video-status">Todavía no hay vídeos publicados en esta lista. '
+                 'El primero aparecerá aquí cuando esté disponible.</p>')
     return f"""<div class="playlist-block"><h3>{e(tit)}</h3>
-<div class="video-feed" data-video-feed="{feed}" aria-live="polite"><p class="video-status">Cargando vídeos…</p></div>
-<noscript><p>Puedes ver los vídeos en la lista de YouTube.</p></noscript>
+<div class="video-feed">{contenido}</div>
 <a class="text-link" href="https://www.youtube.com/playlist?list={pid}" target="_blank" rel="noopener noreferrer">Ver lista en YouTube ↗</a>
 <details class="playlist-embed" data-playlist="{pid}" data-title="{e(tit)}"><summary>Ver el reproductor aquí</summary>
 <p class="embed-note">Al abrirlo, se carga contenido de YouTube. Si no se reproduce, utiliza el enlace a la lista.</p>
@@ -149,6 +161,44 @@ def img_tag(rev, clase, lazy=True):
               f' sizes="(max-width: 700px) 100vw, 700px"') if n in PEQUENAS else ""
     return (f'<img src="/images/{n}"{srcset} alt="{alt}" '
             f'width="1600" height="900" class="{clase}"{carga}>')
+
+# ---------- lista de videos de YouTube ----------
+CACHE_VIDEOS = R / "contenido/videos.json"
+NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015",
+      "media": "http://search.yahoo.com/mrss/"}
+
+def descargar_lista(pid):
+    url = f"https://www.youtube.com/feeds/videos.xml?playlist_id={pid}"
+    with urllib.request.urlopen(url, timeout=20) as r:
+        raiz = ET.fromstring(r.read())
+    salida = []
+    for en in raiz.findall("a:entry", NS)[:6]:
+        mg = en.find("media:group", NS)
+        salida.append({
+            "id": en.findtext("yt:videoId", "", NS),
+            "titulo": en.findtext("a:title", "", NS),
+            "url": en.find("a:link", NS).get("href"),
+            "fecha": en.findtext("a:published", "", NS)[:10],
+            "miniatura": mg.find("media:thumbnail", NS).get("url") if mg is not None else "",
+        })
+    return salida
+
+def cargar_videos():
+    cache = json.loads(CACHE_VIDEOS.read_text("utf-8")) if CACHE_VIDEOS.exists() else {}
+    listas = {"reviews": S["secciones"]["videos"]["playlist"],
+              "development": S["secciones"]["desarrollo"]["playlist"]}
+    nuevo, cambios = dict(cache), False
+    for clave, pid in listas.items():
+        try:
+            nuevo[clave] = descargar_lista(pid)
+            cambios = True
+        except Exception as err:
+            print(f"Aviso: no se pudo actualizar la lista {clave} ({err}); se usa la copia guardada.")
+    if cambios:
+        CACHE_VIDEOS.write_text(json.dumps(nuevo, ensure_ascii=False, indent=1), "utf-8")
+    return nuevo
+
+VIDEOS = cargar_videos()
 
 # ---------- cargar reviews ----------
 revs = []

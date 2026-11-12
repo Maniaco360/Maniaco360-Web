@@ -1,0 +1,26 @@
+{
+ "reviews": [
+  {
+   "id": "4TGg4MlMBHE",
+   "titulo": "CONTROL Resonant: un mundo especial, un resultado de 63/100",
+   "url": "https://www.youtube.com/watch?v=4TGg4MlMBHE",
+   "fecha": "2026-10-23",
+   "miniatura": "https://i1.ytimg.com/vi/4TGg4MlMBHE/hqdefault.jpg"
+  },
+  {
+   "id": "d7CtUV8R6Ek",
+   "titulo": "Mortal Shell II — Review tras 35 horas en PC",
+   "url": "https://www.youtube.com/watch?v=d7CtUV8R6Ek",
+   "fecha": "2026-10-07",
+   "miniatura": "https://i1.ytimg.com/vi/d7CtUV8R6Ek/hqdefault.jpg"
+  },
+  {
+   "id": "YTbaUQy2vDY",
+   "titulo": "Onimusha: Way of the Sword — Review tras 90 horas y el platino",
+   "url": "https://www.youtube.com/watch?v=YTbaUQy2vDY",
+   "fecha": "2026-09-26",
+   "miniatura": "https://i2.ytimg.com/vi/YTbaUQy2vDY/hqdefault.jpg"
+  }
+ ],
+ "development": []
+}
