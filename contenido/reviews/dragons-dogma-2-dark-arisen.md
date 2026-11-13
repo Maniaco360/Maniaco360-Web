@@ -5,7 +5,7 @@ slug: dragons-dogma-2-dark-arisen
 fecha: 2026-11-08
 imagen: dragons-dogma-2-dark-arisen.webp
 descripcion: "Review de Dragon’s Dogma 2: Dark Arisen tras unas 120 horas entre el juego base y la expansión en PC: más desafío, exploración y equipamiento. Mi nota: 81/100."
-video: ""
+video: "https://www.youtube.com/watch?v=UfB2QWj8qIA"
 notas:
   Gameplay: 85
   Diseño y progresión: 90
