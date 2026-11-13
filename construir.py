@@ -318,6 +318,17 @@ def pagina_inicio():
     sitio_ld = ld({"@context": "https://schema.org", "@type": "WebSite", "name": S["nombre"], "url": BASE + "/",
                    "inLanguage": "es", "author": {"@type": "Person", "name": S["autor"]},
                    "description": S["descripcion"]})
+    # Declara que la web, el canal y los perfiles son la misma entidad (sameAs).
+    # Sin esto Google no tiene forma de saber que "Maniaco360" es una marca y no
+    # una variante mal escrita de "maniaco" o "maniac".
+    sitio_ld += ld({"@context": "https://schema.org", "@type": "Organization",
+                    "@id": BASE + "/#organizacion", "name": S["nombre"],
+                    "alternateName": "Maniaco 360", "url": BASE + "/",
+                    "logo": f"{BASE}/images/{p['imagen']}",
+                    "image": f"{BASE}/images/{p['imagen']}",
+                    "description": S["descripcion"],
+                    "founder": {"@type": "Person", "name": S["autor"]},
+                    "sameAs": list(S["redes"].values())})
     head = cabeza(S["titulo"], S["descripcion"], BASE + "/", p["imagen"], "website", sitio_ld)
     resto = "".join(tarjeta(x) for x in revs[1:4])
     sm = S["secciones"]["sobre_mi"]
