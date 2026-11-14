@@ -2,10 +2,10 @@
 juego: "Onimusha: Way of the Sword"
 subtitulo: "90 horas, un platino y sentimientos encontrados"
 slug: onimusha-way-of-the-sword
-contexto: "90 horas y el platino"
+contexto: "PC (Steam) · 90 horas y el platino"
 fecha: 2026-09-18
 imagen: onimusha-way-of-the-sword.webp
-descripcion: "Review de Onimusha: Way of the Sword tras 90 horas y el platino. Un combate que sorprende y una progresión que decepciona. La opinión de Maniaco360: 71/100."
+descripcion: "Review de Onimusha: Way of the Sword tras 90 horas y el platino en PC. Un combate que sorprende y una progresión que decepciona. La opinión de Maniaco360: 71/100."
 video: ""
 notas:
   Gameplay: 80
