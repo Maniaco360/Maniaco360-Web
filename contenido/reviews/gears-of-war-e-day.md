@@ -2,9 +2,10 @@
 juego: "Gears of War: E-Day"
 subtitulo: "el mejor Gears desde el tercero, y no soy objetivo"
 slug: gears-of-war-e-day
+contexto: "PC (Game Pass) y Xbox · Campaña en cooperativo · 52 horas y sin darlo por terminado"
 fecha: 2026-11-14
 imagen: gears-of-war-e-day.webp
-descripcion: "Review de Gears of War: E-Day. La campaña responde por fin qué pasó aquel día, el movimiento nuevo le sienta como un guante y el modo Horda se queda corto. Mi nota: 91/100."
+descripcion: "Review de Gears of War: E-Day tras 52 horas en PC y Xbox, con la campaña en cooperativo: el movimiento nuevo le sienta como un guante y el modo Horda se queda corto. Mi nota: 91/100."
 video: ""
 notas:
   Gameplay: 85
@@ -53,6 +54,8 @@ Pues he de decir que le sienta como un guante y le da un punto de realismo que q
 
 Lo que sí creo es que, a nivel de desarrollo, muchas mecánicas únicas de *Gears* se han perdido por el camino. Los duelos de motosierra, las ejecuciones con cada arma, incluso las ejecuciones a putazos. Son cosas que deberían ir implícitas en un *Gears* y que por el momento este ha perdido.
 
+La campaña la hice en cooperativo con mi pareja y funciona perfectamente. Y hay un detalle que conviene saber: la campaña en locura, que es la que estoy haciendo ahora yo solo, es un auténtico infierno. Ahí los locust dejan de ser enemigos y pasan a ser una amenaza real para tu paciencia.
+
 ## Marcus y Dom siguen siendo Marcus y Dom
 
 La historia avanza correctamente, con alguna sorpresa y con un sentido narrativo que para mí está muy bien construido. En muchas ocasiones la sensación como jugador es exactamente la misma que expresa tu personaje: qué coño está pasando aquí. Y termina de una forma que, a mi parecer, da paso a lo que perfectamente podría ser un reboot completo de la saga, con más de una sorpresa y más de dos. Ojalá Asha Sharma escuche mis plegarias.
@@ -67,7 +70,7 @@ Más allá del movimiento, la jugabilidad no cambia demasiado salvo en un punto:
 
 Antes de analizarlo, dejadme decir una cosa: como el modo Horda de *Gears* 2 y 3 no hay absolutamente nada. Y para mi gusto, pese a que este está bien, tenían mucho más sencillo hacer un copia y pega que inventarse toda esta movida.
 
-El modo Horda es básicamente un nuevo capítulo de mundo abierto, pero con objetivos secundarios distintos y con la diferencia de que en cualquier momento puede aparecer un puto corpser y aniquilarte la existencia. Como jugador tienes la opción de mejorar o añadir accesorios a tus armas base conforme más juegas, y tu clase también mejora para que puedas poner más accesorios, hacer más daño o empezar con armas distintas.
+Llevo bastantes más de veinte partidas, así que hablo con la mano en el mando. El modo Horda es básicamente un nuevo capítulo de mundo abierto, pero con objetivos secundarios distintos y con la diferencia de que en cualquier momento puede aparecer un puto corpser y aniquilarte la existencia. Como jugador tienes la opción de mejorar o añadir accesorios a tus armas base conforme más juegas, y tu clase también mejora para que puedas poner más accesorios, hacer más daño o empezar con armas distintas.
 
 Pero la realidad es que defiendes un aparatejo durante tres rondas y un boss, y extraes para llevarte una serie de accesorios de armas con los que desbloquear los accesorios meta, con las armas meta, con la clase meta.
 
@@ -83,17 +86,31 @@ También agradezco muchísimo que los accesorios no estén en el multijugador. Y
 
 Y quiero destacar las skins. Salvo unas pocas, absolutamente todas se desbloquean gratis simplemente jugando. Gracias. Y si además son skins con una esencia OG que te cagas, pues son perfectas.
 
+## Lo que ves y lo que oyes
+
+Este es el apartado donde el juego me ha ganado sin discusión.
+
+Los locust, las skins, los rostros, la destrucción y los efectos son absolutamente envolventes y realistas, y ayudan a hacerte sentir lo que quieren que sientas. Los locust que te persiguen para pegarte una paliza dan un miedo que te cagas. La única pega que le pongo es que, al hacerlos más realistas, hay pieles y diseños que pierden un poco de impresión. Pero es justamente porque pasan de ser solo monstruos del subsuelo a otra cosa.
+
+El sonido no lo he mencionado hasta ahora precisamente porque es perfecto. Las armas suenan bien y con la contundencia que tienen que tener. Los locust y las voces en general son potentes, como siempre lo han sido en *Gears*.
+
+Y si tengo que destacar algo, es el sonido ambiental durante los capítulos de mundo abierto y el modo Horda. Te hace sentir que estás metido de verdad en una guerra de la que no vas a salir sin pegar algún tiro.
+
 ## Las cuatro notas de Maniaco360
 
 - **Gameplay: 85/100.** Las mecánicas nuevas le sientan como un guante, pero creo que podrían haber estirado un poco más el chicle y mantener mecánicas OG de otros juegos. Además, el modo Horda tiene su atractivo inicial pero no tiene la misma capacidad de mantenerte jugando que los anteriores.
 - **Diseño y progresión: 90/100.** Es probablemente el mejor *Gears* desde *Gears 3*. Casi todo lo que tiene el juego a nivel opcional solo te conlleva jugar más, y aunque el modo Horda no sea para nada lo que esperaba, a nivel de diseño está construido de una forma espectacular.
 - **Narrativa y mundo: 90/100.** No llega al 100 por dos motivos muy simples. Aunque no detecto intención de sustituir a Marcus y Dom, hay escenas de Lucas y Mags que no tienen demasiado sentido incluir. Y veo a Vrags un poco flojo respecto a lo que RAAM fue en su momento: le falta ese punto de aura que a RAAM, con mucho menos tiempo en pantalla, sí consiguieron darle.
-- **Apartado audiovisual: 100/100.** El primer 100 de mis reviews. Los locust, las skins, los rostros, la destrucción y los efectos son absolutamente envolventes y realistas, y ayudan a hacerte sentir lo que quieren. Los locust que te persiguen para pegarte una paliza dan un miedo que te cagas. La única pega: al hacerlos más realistas, hay pieles y diseños que pierden un poco de impresión. Pero es justamente porque pasan de ser solo monstruos del subsuelo a otra cosa.
+- **Apartado audiovisual: 100/100.** El primer 100 de mis reviews, y el único apartado en el que no le pongo un pero de peso. Imagen y sonido van en la misma dirección y consiguen exactamente lo que buscan: meterte dentro.
 
 ## Veredicto: 91/100
 
 *Gears of War: E-Day* es el retorno de una franquicia que vuelve a los orígenes de su historia y lo hace de una forma totalmente renovada y al gusto de los jugadores.
 
 Me he dejado cosas por el camino que echo de menos, sobre todo las mecánicas que hacían que un *Gears* se reconociera al instante, y un modo Horda que para mí no está a la altura del de hace quince años. Pero el movimiento funciona, la campaña responde a la pregunta que llevábamos veinte años haciéndonos, el multijugador conserva lo que importa y visualmente es lo mejor que he visto en la saga.
+
+Llevo 52 horas y no lo doy por terminado ni mucho menos. Me queda la campaña en locura, que es donde estoy ahora, y seguiré cayendo en el multijugador. Eso, viniendo de alguien a quien la vida adulta le quita cada vez más tiempo, dice bastante más que cualquier nota.
+
+Un apunte sobre su rendimiento comercial, porque se ha hablado mucho del tema. Las estimaciones de analistas hablan de unas [230.000 copias vendidas frente a 1,7 millones de jugadores a través de Game Pass](https://vandal.elespanol.com/noticia/2026285009/gears-of-war-eday-habria-vendido-230000-copias-pero-17-millones-de-jugadores-lo-han-disfrutado-en-game-pass/). Son cifras estimadas, no datos oficiales de Microsoft. Y con un juego que sale en Game Pass el día uno, las ventas dicen poca cosa sobre si el juego ha funcionado o no.
 
 Y ya os lo he avisado al principio: con esta saga no soy objetivo. Pero tampoco creo que haga falta serlo para ver que este es el mejor *Gears* desde el tercero.

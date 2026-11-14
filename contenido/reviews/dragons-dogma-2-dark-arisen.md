@@ -2,6 +2,7 @@
 juego: "Dragon’s Dogma 2: Dark Arisen"
 subtitulo: "iba a ser una partida rápida y terminé con 120 horas"
 slug: dragons-dogma-2-dark-arisen
+contexto: "PC (Steam) · Partida nueva en difícil · unas 120 horas entre el juego base y la expansión"
 fecha: 2026-11-08
 imagen: dragons-dogma-2-dark-arisen.webp
 descripcion: "Review de Dragon’s Dogma 2: Dark Arisen tras unas 120 horas entre el juego base y la expansión en PC: más desafío, exploración y equipamiento. Mi nota: 81/100."

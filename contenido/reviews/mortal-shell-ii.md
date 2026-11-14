@@ -2,6 +2,7 @@
 juego: "Mortal Shell II"
 subtitulo: "una gran secuela con un mundo que no termina de encajar"
 slug: mortal-shell-ii
+contexto: "PC · 35 horas · alrededor del 90 % completado"
 fecha: 2026-09-27
 imagen: mortal-shell-ii.webp
 descripcion: "Review de Mortal Shell II tras 35 horas en PC: gran exploración, ambientación poderosa y un mundo que no termina de encajar. Mi nota: 61/100."

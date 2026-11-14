@@ -2,6 +2,7 @@
 juego: "CONTROL Resonant"
 subtitulo: "una Manhattan fascinante y un combate que se agota"
 slug: control-resonant
+contexto: "PC · 32 horas"
 fecha: 2026-10-11
 imagen: control-resonant.webp
 descripcion: "Review de CONTROL Resonant tras 32 horas en PC: una Manhattan fascinante, combate repetitivo y actividades que se agotan. Mi nota: 63/100."

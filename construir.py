@@ -272,6 +272,8 @@ def pagina_review(r):
                  f'<iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/{e(vid)}" '
                  f'title="{e(r["juego"])} en vídeo" frameborder="0" allowfullscreen></iframe></div></details>'
                  f'<a class="text-link" href="{e(r["video"])}" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a></section>')
+    contexto_linea = (f'<p class="review-contexto">{e(r["contexto"])}</p>'
+                       if r.get("contexto") else "")
     otras = [x for x in revs if x["slug"] != r["slug"]][:3]
     relacionadas = ('<section class="content-section"><div class="section-title"><div>'
                     '<span class="eyebrow red">SIGUE LEYENDO</span><h2>Otras reviews<span class="red">.</span></h2></div>'
@@ -284,7 +286,8 @@ def pagina_review(r):
 <h1>{e(r['juego'])} — {e(r['subtitulo'])}</h1>
 <p class="review-deck">{e(r.get('resumen',''))}</p>
 <div class="review-meta"><span><a href="/#sobre-mi">{e(S['autor'])}</a></span>
-<time datetime="{r['fecha']}">{fecha_es(r['fecha'])}</time><span>Veredicto 360</span></div></div>
+<time datetime="{r['fecha']}">{fecha_es(r['fecha'])}</time><span>Veredicto 360</span></div>
+{contexto_linea}</div>
 {img_tag(r, 'review-card-art', lazy=False)}
 {caja_notas(r)}
 {md(cuerpo)}

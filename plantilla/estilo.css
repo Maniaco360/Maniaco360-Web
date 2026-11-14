@@ -48,3 +48,5 @@
 .site-footer .muted,.muted{color:var(--muted)}
 .review-page .review-card-art{width:100%;height:auto;border:1px solid var(--line);margin:8px 0 24px}
 .review-card time{display:block;color:var(--muted);font-size:13px;margin:6px 0}
+
+.review-contexto{margin:.45rem 0 0;font-size:.82rem;letter-spacing:.02em;opacity:.62;text-transform:none}
