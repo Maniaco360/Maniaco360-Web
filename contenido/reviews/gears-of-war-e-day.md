@@ -1,6 +1,6 @@
 ---
 juego: "Gears of War: E-Day"
-subtitulo: "veinte años preguntándonos qué pasó aquel día"
+subtitulo: "el mejor Gears desde el tercero, y no soy objetivo"
 slug: gears-of-war-e-day
 fecha: 2026-11-14
 imagen: gears-of-war-e-day.webp
@@ -12,21 +12,20 @@ notas:
   Narrativa y mundo: 90
   Apartado audiovisual: 100
 imagen_alt: "Arte promocional oficial de Gears of War: E-Day: Marcus y Dom con armadura COG en una calle destruida, un corpser gigante emergiendo tras ellos y el omen carmesí ardiendo en el suelo"
-resumen: "Gears vuelve a sus orígenes y lo hace renovado. Aviso desde ya: con esta saga no voy a poder ser del todo objetivo."
+resumen: "Vuelve a los orígenes y lo hace renovado. Es el mejor Gears desde el tercero, aunque por el camino haya perdido mecánicas que lo hacían reconocible al instante."
 lo_mejor:
   - "El movimiento nuevo le sienta como un guante y no mata la esencia."
   - "Responde por fin a qué pasó el día E, y lo cuenta bien."
   - "Un apartado visual que te hace sentir exactamente lo que quiere."
-  - "Las skins se desbloquean jugando, no pagando."
 lo_falta:
   - "Las mecánicas OG: duelos de motosierra y ejecuciones con cada arma."
   - "Un modo Horda que aguante como el de Gears 2 y 3."
   - "Más aura para Vrags: RAAM imponía más con mucho menos tiempo en pantalla."
 final: 91
 ---
-Gears vuelve a sus orígenes y lo hace renovado. Aviso desde ya: con esta saga no voy a poder ser del todo objetivo.
+Vuelve a los orígenes y lo hace renovado. Es el mejor Gears desde el tercero, aunque por el camino haya perdido mecánicas que lo hacían reconocible al instante.
 
-## No voy a fingir que soy objetivo
+## Antes de nada: no voy a fingir que soy objetivo
 
 Mientras escribía esta review, Xbox cumplió 25 años y sacó su Xbox Playback, ese resumen de tu vida como jugador. El mío me enseñó que llevo jugando en Xbox desde 2007 y que los tres juegos a los que más he jugado, en Xbox o en Game Pass, son *Gears of War* 1, 2 y 3. En ese mismo orden. La vida adulta cada vez te quita más tiempo, por desgracia.
 
@@ -54,8 +53,6 @@ Pues he de decir que le sienta como un guante y le da un punto de realismo que q
 
 Lo que sí creo es que, a nivel de desarrollo, muchas mecánicas únicas de *Gears* se han perdido por el camino. Los duelos de motosierra, las ejecuciones con cada arma, incluso las ejecuciones a putazos. Son cosas que deberían ir implícitas en un *Gears* y que por el momento este ha perdido.
 
-Más allá del movimiento, la jugabilidad no cambia demasiado salvo en un punto: los "mundos abiertos" entre capítulos. A mí ni fu ni fa. Sirven como alargue de la campaña, con objetivos y coleccionables secundarios, y como presentación del modo Horda de este juego.
-
 ## Marcus y Dom siguen siendo Marcus y Dom
 
 La historia avanza correctamente, con alguna sorpresa y con un sentido narrativo que para mí está muy bien construido. En muchas ocasiones la sensación como jugador es exactamente la misma que expresa tu personaje: qué coño está pasando aquí. Y termina de una forma que, a mi parecer, da paso a lo que perfectamente podría ser un reboot completo de la saga, con más de una sorpresa y más de dos. Ojalá Asha Sharma escuche mis plegarias.
@@ -65,6 +62,8 @@ Quiero detenerme en el nuevo equipo Bravo, porque he escuchado y leído que el j
 Mi opinión es que los protagonistas, en todos los casos, son Marcus y Dom. Mags y Lucas tienen la personalidad de una piedra en comparación con Baird y Cole, que por si alguien no lo sabe tuvieron incluso su propio spinoff. En ningún momento veo una intención clara de centrar la historia en ellos. Obviamente cuentan también su historia, porque estás en un jodido apocalipsis, pero no veo intención de sustitución. Es más: intentarlo me parecería un sacrilegio, porque *Gears* no sería *Gears* sin Marcus y Dom.
 
 ## El modo Horda que no esperaba
+
+Más allá del movimiento, la jugabilidad no cambia demasiado salvo en un punto: los "mundos abiertos" entre capítulos. A mí ni fu ni fa. Sirven como alargue de la campaña, con objetivos y coleccionables secundarios, y sobre todo como presentación de lo que viene ahora.
 
 Antes de analizarlo, dejadme decir una cosa: como el modo Horda de *Gears* 2 y 3 no hay absolutamente nada. Y para mi gusto, pese a que este está bien, tenían mucho más sencillo hacer un copia y pega que inventarse toda esta movida.
 
