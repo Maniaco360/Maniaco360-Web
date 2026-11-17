@@ -3,6 +3,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Reconstruye sola cada seis horas para recoger los videos nuevos de las
+  # listas de YouTube sin necesidad de un push. Minuto 25 a proposito: las
+  # tareas programadas en punto se retrasan mas.
+  schedule:
+    - cron: '25 */6 * * *'
 permissions:
   contents: read
   pages: write
