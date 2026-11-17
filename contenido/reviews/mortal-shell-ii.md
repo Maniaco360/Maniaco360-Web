@@ -6,7 +6,7 @@ contexto: "PC · 35 horas · alrededor del 90 % completado"
 fecha: 2026-09-27
 imagen: mortal-shell-ii.webp
 descripcion: "Review de Mortal Shell II tras 35 horas en PC: gran exploración, ambientación poderosa y un mundo que no termina de encajar. Mi nota: 61/100."
-video: ""
+video: "https://www.youtube.com/watch?v=d7CtUV8R6Ek"
 notas:
   Gameplay: 60
   Diseño y progresión: 70

@@ -209,6 +209,33 @@ for f in sorted((R / "contenido/reviews").glob("*.md")):
     datos["url"] = f"{BASE}/reviews/{datos['slug']}/"
     revs.append(datos)
 revs.sort(key=lambda r: r["fecha"], reverse=True)
+# El campo `video` del front matter manda siempre. Si esta vacio, se busca el
+# video en la lista de reproduccion de reviews emparejando por el nombre del
+# juego. El procedimiento manual ("se rellena despues") se perdio cuatro veces
+# seguidas, asi que a partir de ahora el enlace sale solo en cuanto el video
+# aparece en la lista.
+def _clave(t):
+    t = t.lower().replace("\u2019", "'").replace("\u2018", "'")
+    return re.sub(r"[^a-z0-9]+", "", t)
+
+def emparejar_videos(revs):
+    lista = VIDEOS.get("reviews", [])
+    for r in revs:
+        if r.get("video"):
+            continue
+        k = _clave(r.get("juego", ""))
+        if not k:
+            continue
+        for v in lista:
+            if _clave(v["titulo"]).startswith(k):
+                r["video"] = v["url"]
+                print(f"Video emparejado automaticamente: {r['slug']} -> {v['id']}")
+                break
+        else:
+            print(f"Aviso: {r['slug']} no tiene video ni en el front matter ni en la lista.")
+
+emparejar_videos(revs)
+
 ALT = {r["slug"]: r.get("imagen_alt") for r in revs}
 
 # ---------- fragmentos ----------

@@ -6,7 +6,7 @@ contexto: "PC · 32 horas"
 fecha: 2026-10-11
 imagen: control-resonant.webp
 descripcion: "Review de CONTROL Resonant tras 32 horas en PC: una Manhattan fascinante, combate repetitivo y actividades que se agotan. Mi nota: 63/100."
-video: ""
+video: "https://www.youtube.com/watch?v=4TGg4MlMBHE"
 notas:
   Gameplay: 50
   Diseño y progresión: 60

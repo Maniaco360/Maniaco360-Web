@@ -6,7 +6,7 @@ contexto: "PC (Steam) · 90 horas y el platino"
 fecha: 2026-09-18
 imagen: onimusha-way-of-the-sword.webp
 descripcion: "Review de Onimusha: Way of the Sword tras 90 horas y el platino en PC. Un combate que sorprende y una progresión que decepciona. La opinión de Maniaco360: 71/100."
-video: ""
+video: "https://www.youtube.com/watch?v=YTbaUQy2vDY"
 notas:
   Gameplay: 80
   Diseño y progresión: 60
